@@ -1,4 +1,0 @@
-Start -> BOX | TWO_BOXES
-BOX -> rectangle
-BOX -> contains(rectangle, circle)
-TWO_BOXES-> left_of(BOX, BOX)

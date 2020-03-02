@@ -1,2 +1,0 @@
-rectangle 0 0 100 100
-rectangle 100 0 200 100
