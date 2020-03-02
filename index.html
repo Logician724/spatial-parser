@@ -1,12 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <input type="file" name="files" />
-    <script src="parsingGrammer.js"></script>
-  </body>
+<html class="h-100">
+
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+                integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+                crossorigin="anonymous">
+        <link rel="stylesheet" href="app.css" />
+        <title>Grammar Parsers</title>
+</head>
+
+<body class="h-100 w-100 jumbotron">
+        <h1 class="display-4">Grammar Parser</h1>
+
+        <div class="row h-75">
+
+                <div class="col-sm-12 col-md-6">
+                        <p class="lead">Parsing Result</p>
+                        <div class="bg-white">
+                                <canvas id="scratch-canvas"></canvas>
+                        </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+
+                        <div id="parsed-text" class="h-100" aria-labelledby="parsed-text-tab">
+                                <p class="lead"> Add graphics grammar here</p>
+                                <textarea id="parsed-text-area" class=" form-control w-100 height mb-2"
+                                        placeholder="shape minX minY maxX maxY" rows=2></textarea>
+                                <button class="btn btn-dark" onclick="executeParsedText()">Submit</button>
+                        </div>
+                </div>
+
+        </div>
+        <!-- VENDOR SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+                integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+                crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+                integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+                crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+                integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+                crossorigin="anonymous"></script>
+        <!-- CREATE JS FILES-->
+        <script src="./createjs/createjs.min.js"></script>
+        <script src="./createjs/tweenjs.min.js"></script>
+        <script src="./createjs/easeljs.min.js"></script>
+        <!-- INTERFACE SETUP-->
+        <script src="initCanvas.js"></script>
+        <script src="readTextAreas.js"></script>
+        <script src="rectangle.js"></script>
+        <script src="circle.js"></script>
+
+</body>
+
 </html>
