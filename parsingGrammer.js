@@ -47,7 +47,6 @@ input.addEventListener(
           console.log('==========');
           console.log(shape1[1] == shape2[1]);
           console.log('==========');
-          console.log();
           console.log(shape1[3], shape2[3]);
           if (shape1.toString() == shape2.toString()) {
             console.log('rectangles overlapping');
