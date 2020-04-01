@@ -66,4 +66,5 @@ function parseGraphics(desc) {
   for (const shape of shapes) {
     shape.draw(stage);
   }
+  alert(`The answer is ${10 ** shapes.length }`);
 } 
